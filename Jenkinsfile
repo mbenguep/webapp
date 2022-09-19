@@ -21,3 +21,4 @@ node{
           sh "/opt/maven/bin/mvn sonar:sonar"
         }
     }
+}
