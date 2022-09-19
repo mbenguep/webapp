@@ -2,7 +2,7 @@ node{
     stage('Checkout'){
 
 
-        git branch: 'master', url: 'https://github.com/mbenguep/webapp.git'
+        git 'https://github.com/mbenguep/webapp.git'
     }
     stage('compile-package'){
         // getting maven home path
