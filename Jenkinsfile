@@ -11,13 +11,13 @@ node{
     }
     stage('Clean Package') {
         echo 'Code Quality'
-        withSonarQubeEnv('sonar-2') { 
+        withSonarQubeEnv('s1-91') { 
           sh "/opt/maven/bin/mvn clean package"
         }
     }
     stage('SonarQube Analysis') {
         echo 'Code Quality'
-        withSonarQubeEnv('sonar-2') { 
+        withSonarQubeEnv('s1-91') { 
           sh "/opt/maven/bin/mvn sonar:sonar"
         }
     }
