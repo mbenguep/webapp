@@ -67,7 +67,7 @@
         </div>
         <div class="col-md-4">
             <h2>Security</h2>
-            <p>Information security works by incorporating a variety of measures into Software Development Life Cycles (SDLCs) and software testing processes.<br>These measures may include:</br>Security requirements definition</br><br>Secure coding practices</br><br>Static code analysis</br><br>Penetration testing</br><br>Limiting access control</br><br>Computer security is an aggressive, ongoing process that starts with an audit, then evolves into ongoing security maintenance over the lifetime of the product.</br> </p>
+            <p>Information security works by incorporating a variety of measures into Software Development Life Cycles (SDLCs) and software testing processes.<br>These measures may include:</br>Security requirements definition, Secure coding practices, Static code analysis, Penetration testing, Limiting access control <br>Computer security is an aggressive, ongoing process that starts with an audit, then evolves into ongoing security maintenance over the lifetime of the product.</br> </p>
             <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">
