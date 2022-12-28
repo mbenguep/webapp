@@ -61,7 +61,7 @@ node{
         // getting maven home path
 
     sshPublisher(publishers: [sshPublisherDesc(configName: 'dockerhost', transfers: [sshTransfer(cleanRemote: false, excludes: '', 
-    execCommand: 'oc rollout restart deployment mbengue -n deploy-mem', execTimeout: 3000000, flatten: false, 
+    execCommand: 'oc rollout restart deployment report -n deploy-mem', execTimeout: 3000000, flatten: false, 
     makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, 
     removePrefix: '', sourceFiles: '')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
 
