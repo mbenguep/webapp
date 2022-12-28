@@ -21,7 +21,7 @@ node{
 
         sshPublisher(publishers: [sshPublisherDesc(configName: 'ansible', transfers: [sshTransfer(cleanRemote: false, excludes: '', 
         execCommand: '''cd /opt/docker/webapp;
-        ansible-playbook webdev_image.yml''', execTimeout: 900000000, flatten: false, makeEmptyDirs: false, 
+        ansible-playbook create_image.yml''', execTimeout: 900000000, flatten: false, makeEmptyDirs: false, 
         noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '//opt//docker//webapp', remoteDirectorySDF: false, 
         removePrefix: 'target', sourceFiles: 'target/*.war')], usePromotionTimestamp: false, 
         useWorkspaceInPromotion: false, verbose: false)])
