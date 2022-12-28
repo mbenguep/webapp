@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mamadou Mbegue">
+    <meta name="author" content="Mamadou Mbengue">
     <link rel="icon" href="../../favicon.ico">
 
     <title>Final Report</title>
@@ -53,7 +53,7 @@
     <div class="container">
         <h1>DAUST</h1>
         <p>Engineering Report. </p>
-        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+        <p><a class="btn btn-primary btn-lg" role="button", href="./MamadouMbengueFinal-report.pdf">Learn more &raquo;</a></p>
     </div>
 </div>
 
@@ -80,7 +80,7 @@
     <hr>
 
     <footer>
-        <p>&copy; Mamadou Mbengue 2020</p>
+        <p>&copy; Mamadou Mbengue 2022</p>
     </footer>
 </div> <!-- /container -->
 
