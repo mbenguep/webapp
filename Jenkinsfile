@@ -4,11 +4,6 @@ node{
 
         git 'https://github.com/mbenguep/webapp.git'
     }
-    stage('compile-package'){
-        // getting maven home path
-
-        sh "/opt/maven/bin/mvn package"
-    }
     stage('Clean Package') {
         echo 'Code Quality'
         withSonarQubeEnv('s1-91') { 
@@ -36,7 +31,7 @@ node{
         // getting maven home path
 
     sshPublisher(publishers: [sshPublisherDesc(configName: 'ansible', transfers: [sshTransfer(cleanRemote: false, excludes: '', 
-    execCommand: 'ansible-playbook -i /opt/docker/inventory /opt/docker/webapp/kube_deploy.yml', execTimeout: 3000000, flatten: false, 
+    execCommand: 'ansible-playbook -i /opt/docker/webapp/inventory /opt/docker/webapp/kube_deploy.yml', execTimeout: 3000000, flatten: false, 
     makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, 
     removePrefix: '', sourceFiles: '')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
 
@@ -46,7 +41,7 @@ node{
         // getting maven home path
 
     sshPublisher(publishers: [sshPublisherDesc(configName: 'ansible', transfers: [sshTransfer(cleanRemote: false, excludes: '', 
-    execCommand: 'ansible-playbook -i /opt/docker/inventory /opt/docker/webapp/kube_service.yml', execTimeout: 3000000, flatten: false, 
+    execCommand: 'ansible-playbook -i /opt/docker/webapp/inventory /opt/docker/webapp/kube_service.yml', execTimeout: 3000000, flatten: false, 
     makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, 
     removePrefix: '', sourceFiles: '')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
 
@@ -56,7 +51,7 @@ node{
         // getting maven home path
 
     sshPublisher(publishers: [sshPublisherDesc(configName: 'ansible', transfers: [sshTransfer(cleanRemote: false, excludes: '', 
-    execCommand: 'ansible-playbook -i /opt/docker/inventory /opt/docker/webapp/kube_route.yml', execTimeout: 3000000, flatten: false, 
+    execCommand: 'ansible-playbook -i /opt/docker/webapp/inventory /opt/docker/webapp/kube_route.yml', execTimeout: 3000000, flatten: false, 
     makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, 
     removePrefix: '', sourceFiles: '')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
 
@@ -66,7 +61,7 @@ node{
         // getting maven home path
 
     sshPublisher(publishers: [sshPublisherDesc(configName: 'dockerhost', transfers: [sshTransfer(cleanRemote: false, excludes: '', 
-    execCommand: 'oc rollout restart deployment mamadou-memapp -n deploy-mem', execTimeout: 3000000, flatten: false, 
+    execCommand: 'oc rollout restart deployment mbengue -n deploy-mem', execTimeout: 3000000, flatten: false, 
     makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, 
     removePrefix: '', sourceFiles: '')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
 
