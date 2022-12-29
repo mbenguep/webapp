@@ -49,7 +49,7 @@
 </div>
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron text-center bg-image" style=" background-image: url('./DAUST.png'); background-position: left;">
+<div class="jumbotron text-center bg-image" style=" background-image: url('./DAUST.png'); background-position: center;">
     <div class="container" style="background-color: rgba(232, 234, 239, 0.619);">
         <h1>DAUST</h1>
         <p>Engineering Report. </p>
