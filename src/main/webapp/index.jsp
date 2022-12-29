@@ -32,7 +32,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">DevSecOps</a>
+            <a class="navbar-brand" href="./MamadouMbengueFinal-report.pdf">DevSecOps</a>
         </div>
         <div class="navbar-collapse collapse">
             <form class="navbar-form navbar-right" role="form">
