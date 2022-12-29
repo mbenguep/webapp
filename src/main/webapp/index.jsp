@@ -49,8 +49,8 @@
 </div>
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron text-center bg-image" style=" background-image: url('./DAUST.png');">
-    <div class="container" style="background-color: rgba(255, 255, 255, 0.619);">
+<div class="jumbotron text-center bg-image" style=" background-image: url('./DAUST.png'); background-position: left;">
+    <div class="container" style="background-color: rgba(135, 161, 232, 0.619);">
         <h1>DAUST</h1>
         <p>Engineering Report. </p>
         <p><a class="btn btn-primary btn-lg" role="button", href="./MamadouMbengueFinal-report.pdf">Learn more &raquo;</a></p>
