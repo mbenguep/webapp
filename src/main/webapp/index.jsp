@@ -8,7 +8,7 @@
     <meta name="author" content="Mamadou Mbengue">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Final Repor</title>
+    <title>Final Report</title>
 
 
     <!-- Custom styles for this template -->
