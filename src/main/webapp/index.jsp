@@ -52,7 +52,7 @@
 <div class="jumbotron text-center bg-image" style=" background-image: url('./downloads.jfif');ls">
     <div class="container" style="background-color: rgba(240, 244, 245, 0.619);">
         <h1>DAUST</h1>
-        <p>Engineering Repor </p>
+        <p>Engineering Report </p>
         <p><a class="btn btn-primary btn-lg" role="button", href="./MamadouMbengueFinal-report.pdf">Learn more &raquo;</a></p>
     </div>
 </div>
